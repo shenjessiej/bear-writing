@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title index-post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <ul class="post-list short-fiction-index">
+    {%- for post in site.posts-%}
+    {%- if post.categories[0] == "short fiction" -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <h3>
+            {{ post.title }}
+          </h3>
+        </a>
+      <div class="post-category">{{ post.date | date: date_format }}</div>
+      <div class="post-sample">{{ post.sample }}</div>
+
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+  </ul>
+
+
+
+</article>
+<script src="{{ base.url | prepend: site.url }}/assets/js/header-scroll.js"></script>

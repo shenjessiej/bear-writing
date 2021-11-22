@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="home-intro">
+  </div>
+    <div class="logo-big"><img src="{{ base.url | prepend: site.url }}/assets/image0.png"></div>
+    <div class="home-content">
+      {{ content }}
+    </div>
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Works" }}</h2>
+    <h3 class="post-meta">poetry</h3>
+    <ul class="post-list">
+      {% assign maxPost = 5 %}
+      {% assign counter = 0 %}
+      {%- for post in site.posts-%}
+      {%- if post.categories[0] == "poetry" -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h3>
+              {{ post.title }}
+            </h3>
+          </a>
+        <div class="post-category">{{ post.date | date: "%b %Y" }}</div>
+      </li>
+      {% assign counter = counter | plus: 1 %}
+        {% if counter == maxPost %}
+            {% break %} 
+        {% endif %}
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    <h3 class="post-meta">short fiction</h3>
+    <ul class="post-list">
+      {% assign maxPost = 5 %}
+      {% assign counter = 0 %}
+      {%- for post in site.posts-%}
+      {%- if post.categories[0] == "short fiction" -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h3>
+              {{ post.title }}
+            </h3>
+          </a>
+        <div class="post-category">{{ post.date | date: "%b %Y" }}</div>
+        <div class="post-sample">{{ post.sample }}</div>
+      </li>
+      {% assign counter = counter | plus: 1 %}
+      {% if counter == maxPost %}
+          {% break %} 
+      {% endif %}
+
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+
+</div>
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/header-scroll-home.js"></script>

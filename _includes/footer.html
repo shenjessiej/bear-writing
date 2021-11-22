@@ -1,0 +1,81 @@
+<footer class="site-footer h-card">
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  
+    <div class="wrapper">
+    <div class="footer-text">
+        © jessie shen  <br>
+        <i>thank you for reading!</i>
+
+    </div>
+  
+    </div>
+  
+        {% assign currentPostIndex = 0 %}
+
+        {%- for post in site.posts reversed -%}
+            {% assign currentPostIndex = currentPostIndex | plus: 1 %}  
+                {%- if post.title == page.title -%}
+                    {% break %} 
+            {%- endif -%}
+        {%- endfor -%}
+
+        {% assign previousPostIndex = currentPostIndex | plus: 1 %}
+
+
+        {% assign foundPrevious = 0 %}
+
+        {%- for index in site.posts reversed -%}
+            {%- if foundPrevious == 1 -%}
+                {% break %} 
+            {% endif %}
+
+            {% assign i = 0 %}
+            {%- for post in site.posts reversed -%}
+                {% assign i = i | plus: 1 %}  
+                {% if i == previousPostIndex and post.categories[0] == page.categories[0] %}
+                        <div class="previous-post">
+                            <a href="{{ post.url | relative_url }}"><i class="fas fa-angle-left"></i> <span class="pagination-text">{{ post.title }}</span></a>
+                        </div>
+
+                        {% assign foundPrevious = 1 %}
+                        {% break %} 
+                {% endif %}
+            {%- endfor -%}
+            {% assign previousPostIndex = previousPostIndex | plus: 1 %}
+        {%- endfor -%}
+
+
+        {% assign currentPostIndex = 0 %}
+
+        {%- for post in site.posts -%}
+            {% assign currentPostIndex = currentPostIndex | plus: 1 %}  
+                {%- if post.title == page.title -%}
+                    {% break %} 
+            {%- endif -%}
+        {%- endfor -%}
+
+        {% assign nextPostIndex = currentPostIndex | plus: 1 %}
+
+        {% assign foundNext = 0 %}
+
+        {%- for index in site.posts -%}
+        {%- if foundNext == 1 -%}
+            {% break %} 
+        {% endif %}
+
+        {% assign i = 0 %}
+        {%- for post in site.posts -%}
+            {% assign i = i | plus: 1 %}  
+            {% if i == nextPostIndex and post.categories[0] == page.categories[0] %}
+                    <div class="next-post">
+                        <a href="{{ post.url | relative_url }}"><span class="pagination-text">{{ post.title }}</span> <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                    {% assign foundNext = 1 %}
+                    {% break %} 
+            {% endif %}
+        {%- endfor -%}
+        {% assign nextPostIndex = nextPostIndex | plus: 1 %}
+    {%- endfor -%}
+
+  </footer>
