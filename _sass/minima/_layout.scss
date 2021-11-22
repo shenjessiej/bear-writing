@@ -518,8 +518,13 @@
     > li {
       margin-bottom: $spacing-unit;
       flex: auto;
-      max-width: 50%;
+      max-width: 44%;
+
+      &:not(:last-child) {
+        margin-right: 35px;
+      }  
     }
+
   }
 
   @include media-query($on-palm) {
@@ -574,7 +579,7 @@
   .post-sample {
     font-size: $small-font-size;
     line-height: 1.4;
-
+    margin-top: 10px;
   }
 
   /**
@@ -625,6 +630,8 @@
     margin-bottom: $spacing-unit;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 20px;
+
 
     h2 {
       @include relative-font-size(2);
@@ -649,6 +656,13 @@
         @include relative-font-size(1.125);
       }
     }
+
+    hr {
+      margin: 80px;
+      border:0;
+      height:1px;
+      background:$grey-color-light;
+      }
   }
 
   @include media-query($on-palm) {
@@ -698,6 +712,7 @@
     line-height: 30px;
     text-align: center;
     transition: .5s;
+    color: $grey-color-dark;
   }
 
   .scroll-button-display {
