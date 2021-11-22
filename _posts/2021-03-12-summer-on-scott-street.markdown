@@ -30,7 +30,7 @@ Henry shakes his head.
 
 “We broke Joanne’s window just last week,” Hazel points out.
 
-“Yeah, fuckass,” Lee says, earning a half-hearted elbow to the ribcage. She snickers and rolls over onto her side, daring to retreat to the shade of a second tree. “How ‘bout the fish aisle? Not at the butcher, at the, the,”
+“Yeah, dumbass,” Lee says, earning a half-hearted elbow to the ribcage. She snickers and rolls over onto her side, daring to retreat to the shade of a second tree. “How ‘bout the fish aisle? Not at the butcher, at the, the,”
 
 “At the Korean grocer?” Hazel asks.
 
