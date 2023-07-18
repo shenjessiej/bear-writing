@@ -3,12 +3,12 @@ short stories &amp; poems. personal blog
 
 
 ## developer notes
-test out local changes
+test out changes locally
 ```
 bundle exec jekyll serve --baseurl=""
 ```
 
-rebuild site
+rebuild site (do before pushing changes) 
 ```
 jekyll build
 ```
