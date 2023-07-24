@@ -1,5 +1,6 @@
 # bear-writing
 short stories &amp; poems. personal blog
+visit at https://shenjessiej.github.io/bear-writing/
 
 
 ## developer notes
