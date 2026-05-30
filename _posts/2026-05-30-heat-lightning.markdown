@@ -9,6 +9,7 @@ sample: Sent on a mission on behalf of the Dragon King of the South Sea’s roya
 ---
 
 The Sudden Gust that Knocks Your Hat Off was considered the lowest ranking official in the immortal Dragon King of the South Sea’s royal underwater court, but he was just happy to have gotten the job. There weren’t many places a minor wind demon could start over, you know. And he was on the way up, swear! Maybe a few thousand more years and he’d be out of the kitchens and somewhere a little less pressure-cooker. Somewhere a little more… scenic, like the gardens. The gardens would be nice. 
+
 Today, the whole lagoon hummed with energy. The Dragon King of the South Sea’s Stormy Stew Soiree was the most anticipated event of the summer. It was a highly involved production that required hundreds of immortals across dozens of weeks to coordinate. There were broths to simmer, cumulonimbus clouds to condense, and storm paths to calculate. 
 
 “You there! Wind demon.” 
