@@ -5,6 +5,7 @@ date:   2026-05-30 12:46:39 -0500
 categories:
 - short fiction
 sample: Sent on a mission on behalf of the Dragon King of the South Sea’s royal court, a minor wind demon has an unexpected encounter with a past flame.
+preface: I wrote this for R1 of <a href="https://www.nycmidnight.com/ffc">NYC Midnight's</a> 2026 Flash Fiction Challenge. My prompts were romantic comedy (genre), a lagoon (setting), and a ladle (object), and inspiration really came from the idea that you can brew a storm, but also a soup. Enjoy!
 
 ---
 
